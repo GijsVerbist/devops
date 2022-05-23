@@ -13,8 +13,8 @@ spec:
     spec:
       containers:
       - name: chat
-        imagePullPolicy: IfNotPresent
-        image: chat:latest 
+        imagePullPolicy: Always
+        image: docker.io/gijsverbist/devops:chat 
         ports:
           - containerPort: 3000
             name: http-web-svc
