@@ -13,8 +13,8 @@ spec:
     spec:
       containers:
       - name: nginx
-        imagePullPolicy: IfNotPresent
-        image: nginx-static:latest
+        imagePullPolicy: Always
+        image: docker.io/gijsverbist/devops:frontend
         ports:
           - containerPort: 80
             name: http-web-svc
